@@ -1155,8 +1155,8 @@ DR_EXPLAIN.data_menu = {
 DR_EXPLAIN.namespace( 'DR_EXPLAIN.data_search' );
 DR_EXPLAIN.data_search = {
 
-    DREXPLAIN_NOT_FOUND: "Not found",
-    DREXPLAIN_EMPTY_STRING: "Enter text to search",
+    DREXPLAIN_NOT_FOUND: "Nothing was found",
+    DREXPLAIN_EMPTY_STRING: "Please, enter a string for search!",
     DREXPLAIN_IN_PROGRESS: "Searching...",
     DREXPLAIN_PREVIEW_MODE_SEARCH_IS_DISABLED_NOTICE : "In the preview mode the search is disabled.",
     DREXPLAIN_ERROR_LOCAL_SEARCH : "Google Chrome and Opera 12.02 and above do not support search in local HTML files. Upload your files to web server or use another browser."
