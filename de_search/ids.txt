@@ -1,0 +1,363 @@
+1
+ Home
+ index.html
+2
+ TeraByte OS Deployment Tool
+ terabyte_os_deployment_tool.html
+3
+ Introduction & Requirements
+ introduction___requirements.html
+4
+ Using TBOSDT Interactively
+ using_tbosdt_interactively.html
+5
+ Using TBOSDT Commands from a Script
+ using_tbosdt_commands_from_a_script.html
+6
+ TBOSDT Command Reference
+ tbosdt_command_reference.html
+7
+ General Usage Notes
+ general_usage_notes.html
+8
+ 1. Commands for Working with Files and Folders
+ 1__commands_for_working_with_files_and_folders.html
+9
+ Examples 
+ examples_.html
+10
+ 2. Commands for Working with Drives and File Systems
+ 2__commands_for_working_with_drives_and_file_systems.html
+11
+ Examples
+ examples_1.html
+12
+ 3. Commands for Working with Registry Files
+ 3__commands_for_working_with_registry_files.html
+13
+ Examples
+ examples_2.html
+14
+ 4. Commands for Working with the Registry on a Running Windows System
+ 4__commands_for_working_with_the_registry_on_a_running_windows_system.html
+15
+ Examples
+ examples_3.html
+16
+ 5. Commands Associated with Windows Driver Installation
+ 5__commands_associated_with_windows_driver_installation.html
+17
+ Examples
+ examples_4.html
+18
+ 6. Additional Commands
+ 6__additional_commands.html
+19
+ Examples
+ examples_5.html
+20
+ TeraByte Scripting Language
+ terabyte_scripting_language.html
+21
+ Overview
+ overview.html
+22
+ Structure
+ structure.html
+23
+ Variables
+ variables.html
+24
+ Constants
+ constants.html
+25
+ Operators
+ operators.html
+26
+ TBScript Language Reference
+ tbscript_language_reference.html
+27
+ ARG, ARGC Subroutines
+ arg__argc_subroutines.html
+28
+ ASC Subroutine
+ asc_subroutine.html
+29
+ BINARY Subroutine
+ binary_subroutine.html
+30
+ BREAK Subroutine
+ break_subroutine.html
+31
+ CHDIR Subroutine
+ chdir_subroutine.html
+32
+ CHR Subroutine
+ chr_subroutine.html
+33
+ CLS Subroutine
+ cls_subroutine.html
+34
+ CONST Keyword
+ const_keyword.html
+35
+ DELKEY Subroutine
+ delkey_subroutine.html
+36
+ DELVALUE Subroutine
+ delvalue_subroutine.html
+37
+ DIRECTVIDEO Subroutine
+ directvideo_subroutine.html
+38
+ EXEC Subroutine
+ exec_subroutine.html
+39
+ EXITLOOP Keyword
+ exitloop_keyword.html
+40
+ EXT Subroutine
+ ext_subroutine.html
+41
+ FINDFIRST, FINDNEXT Subroutines
+ findfirst__findnext_subroutines.html
+42
+ FOR..TO..NEXT Keywords
+ for__to__next_keywords.html
+43
+ GETCWD Subroutine
+ getcwd_subroutine.html
+44
+ GETDATE Subroutine
+ getdate_subroutine.html
+45
+ GETDATETIME Subroutine
+ getdatetime_subroutine.html
+46
+ GETDRIVE Subroutine
+ getdrive_subroutine.html
+47
+ GETDRVLTRINFO Subroutine
+ getdrvltrinfo_subroutine.html
+48
+ GETENV Subroutine
+ getenv_subroutine.html
+49
+ GETHDINFO Subroutine
+ gethdinfo_subroutine.html
+50
+ GETKEY Subroutine
+ getkey_subroutine.html
+51
+ GETKEYORD Subroutine
+ getkeyord_subroutine.html
+52
+ GETSTR Subroutine
+ getstr_subroutine.html
+53
+ GETTIME Subroutine
+ gettime_subroutine.html
+54
+ GETSYSINFO Subroutine
+ getsysinfo_subroutine.html
+55
+ GETVALUE Subroutine
+ getvalue_subroutine.html
+56
+ GETVALUEORD Subroutine
+ getvalueord_subroutine.html
+57
+ GETUEFIVAR Subroutine
+ getuefivar_subroutine.html
+58
+ GLOBAL Keyword
+ global_keyword.html
+59
+ GOTO Keyword
+ goto_keyword.html
+60
+ HDCACHEINFO Subroutine
+ hdcacheinfo_subroutine.html
+61
+ HEX Subroutine
+ hex_subroutine.html
+62
+ IF..THEN..ELSEIF..ELSE..END IF Keywords
+ if__then__elseif__else__end_if_keywords.html
+63
+ INCLUDE Keyword
+ include_keyword.html
+64
+ INSTR Subroutine
+ instr_subroutine.html
+65
+ ISDRIVE Subroutine
+ isdrive_subroutine.html
+66
+ ISELEVATED Subroutine
+ iselevated_subroutine.html
+67
+ ISSTRTYPE Subroutine
+ isstrtype_subroutine.html
+68
+ LCASE Subroutine
+ lcase_subroutine.html
+69
+ LEFT Subroutine
+ left_subroutine.html
+70
+ LEN Subroutine
+ len_subroutine.html
+71
+ LOF Subroutine
+ lof_subroutine.html
+72
+ MD5 Subroutine
+ md5_subroutine.html
+73
+ MID Subroutine
+ mid_subroutine.html
+74
+ MKDIR Subroutine
+ mkdir_subroutine.html
+75
+ OCT Subroutine
+ oct_subroutine.html
+76
+ OPEN, CLOSE Subroutines
+ open__close_subroutines.html
+77
+ OSSTAT Subroutine
+ osstat_subroutine.html
+78
+ PAD Subroutine
+ pad_subroutine.html
+79
+ PRINT, PRINTL Subroutines
+ print__printl_subroutines.html
+80
+ RAND Subroutine
+ rand_subroutine.html
+81
+ READL Subroutine
+ readl_subroutine.html
+82
+ RENAME Subroutine
+ rename_subroutine.html
+83
+ RETURN Keyword
+ return_keyword.html
+84
+ RIGHT Subroutine
+ right_subroutine.html
+85
+ RMDIR Subroutine
+ rmdir_subroutine.html
+86
+ RMFILE Subroutine
+ rmfile_subroutine.html
+87
+ SEEK Subroutine
+ seek_subroutine.html
+88
+ SETATTR Subroutine
+ setattr_subroutine.html
+89
+ SETDRIVE Subroutine
+ setdrive_subroutine.html
+90
+ SETENV Subroutine
+ setenv_subroutine.html
+91
+ SETLOCALE Subroutine
+ setlocale_subroutine.html
+92
+ SETUEFIVAR Subroutine
+ setuefivar_subroutine.html
+93
+ SETVALUE Subroutine
+ setvalue_subroutine.html
+94
+ SHA256 Subroutine
+ sha256_subroutine.html
+95
+ SLEEP Subroutine
+ sleep_subroutine.html
+96
+ SUB..END SUB Keywords
+ sub__end_sub_keywords.html
+97
+ TBOSDT Global Variable
+ tbosdt_global_variable.html
+98
+ TBOSDT_USER Global Variable
+ tbosdt_user_global_variable.html
+99
+ TBOSDT_KEY Global Variable
+ tbosdt_key_global_variable.html
+100
+ TXASCII Subroutine
+ txascii_subroutine.html
+101
+ TXCURSORTYPE Subroutine
+ txcursortype_subroutine.html
+102
+ TXGETBLOCK Subroutine
+ txgetblock_subroutine.html
+103
+ TXGETINFO Subroutine
+ txgetinfo_subroutine.html
+104
+ TXGOTOXY Subroutine
+ txgotoxy_subroutine.html
+105
+ TXINIT Subroutine
+ txinit_subroutine.html
+106
+ TXMODE Subroutine
+ txmode_subroutine.html
+107
+ TXOUTCH Subroutine
+ txoutch_subroutine.html
+108
+ TXPUTBLOCK Subroutine
+ txputblock_subroutine.html
+109
+ TXSETATTR Subroutine
+ txsetattr_subroutine.html
+110
+ TXTERM Subroutine
+ txterm_subroutine.html
+111
+ TXWHEREX Subroutine
+ txwherex_subroutine.html
+112
+ TXWHEREY Subroutine
+ txwherey_subroutine.html
+113
+ UCASE Subroutine
+ ucase_subroutine.html
+114
+ WINDELKEY Subroutine (Windows Version Only)
+ windelkey_subroutine__windows_version_only_.html
+115
+ WINDELVALUE Subroutine (Windows Version Only)
+ windelvalue_subroutine__windows_version_only_.html
+116
+ WINGETKEYORD Subroutine (Windows Version Only)
+ wingetkeyord_subroutine__windows_version_only_.html
+117
+ WINGETVALUE Subroutine (Windows Version Only)
+ wingetvalue_subroutine__windows_version_only_.html
+118
+ WINGETVALUEORD Subroutine (Windows Version Only)
+ wingetvalueord_subroutine__windows_version_only_.html
+119
+ WINSETVALUE Subroutine (Windows Version Only)
+ winsetvalue_subroutine__windows_version_only_.html
+120
+ WHILE..WEND Keywords
+ while__wend_keywords.html
+121
+ WRITEL Subroutine
+ writel_subroutine.html

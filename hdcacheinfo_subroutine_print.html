@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>HDCACHEINFO Subroutine</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>HDCACHEINFO Subroutine</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Usage: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">info = HDCACHEINFO(num) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Description: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Obtains information about a given hard drives (zero-based) cache that was opened by OPEN CACHE.&#160; A non-zero return value indicates a cache was found.&#160; The return value contains several members that provide the information.&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The member names are: </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 30%;" class="de_col_1_172" />
+<col style="width: 70%;" class="de_col_2_404" />
+<tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">SIZE</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Size of the cache in bytes. </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">MAXIOREQ</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Largest I/O request (in bytes) to cache. </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">FLAGS</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Cache flags (Bit 0=Lazy Write, Bit 1=Partial Lazy Write). </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">READHIT</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of cache read hits.&#160; </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">READMISS</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of cache read misses. </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">WRITEHIT</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of cache write hits. </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">WRITEMISS</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of cache write misses. </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ERRORS</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of cache aborts (memory or lazy write failure)&#160; </span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_172" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 30%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">WRITEERRORS</span></div>
+</td><td class="de_td_404" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 70%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Number of lazy write failures</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Example: </strong></span><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 0px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #000000; border-right-style: none; border-right-width: 0px; border-right-color: #000000; border-top-style: none; border-top-width: 0px; border-top-color: #000000; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #000000;  width: 100%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">sub main() </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; ext(&quot;mount 0: 0 0x01&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; ext(&quot;open cache 0&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; info=hdcacheinfo(0) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; if info then </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Size:&quot;, info.size) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Max IO Request Cached:&quot;, info.maxioreq) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Flags:0x&quot;, hex(info.flags)) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Read Hits:&quot;, info.readhit) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Read Misses:&quot;, info.readmiss) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Write Hits:&quot;, info.writehit) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Write Misses:&quot;, info.writemiss) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Errors:&quot;, info.errors) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;Lazy Write Errors:&quot;, info.writeerrors) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; else </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160; &#160; printl(&quot;No cache found&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; end if &#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; ext(&quot;close cache 0&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; ext(&quot;umount 0:&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">end sub</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

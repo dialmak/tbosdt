@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7]><html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie ie6 no-js"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie ie7 no-js"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie ie8 no-js"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie ie9 no-js"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!--<![endif]-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+        drex_file_name = "2__commands_for_working_with_drives_and_file_systems.html";
+    //]]>
+    </script>
+
+    		<title>2. Commands for Working with Drives and File Systems</title>
+
+    <link rel="stylesheet" type="text/css" href="css/all.css" media="all" />
+    <link rel="stylesheet" href="de_style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="custom.css" type="text/css" media="all" />
+
+    <script type="text/javascript" src="js/all.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/drexplain.data.index.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/all2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/oembed.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(document).ready(function() {
+                $(".oembed").oembed(null,
+                        {
+                            embedMethod: "replace_with_new_size"
+                        });
+        });
+    //]]>
+    </script>
+                </head>
+<body class="b-body">
+<script type="text/javascript">
+//<![CDATA[
+    if (document.referrer == "" && navigator.userAgent == "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11")
+    {
+        var im = document.createElement("img");
+        im.src = "0";
+        document.body.appendChild(im);
+
+        $.drex_avoid_load = true;
+    }
+//]]>
+</script>
+<div class="b-pageLayout" id="pageLayout">
+<script type="text/javascript">
+//<![CDATA[
+    if ($.drex_avoid_load)
+        $("#pageLayout").addClass("hidden");
+    else if (1 == 1 && !is_touch_device())
+        $("#pageLayout").addClass("keep-visible");
+//]]>
+</script>
+        <div class="b-pageContent
+        m-pageContent__withoutHeader
+        m-pageContent__withoutLeft
+        m-pageContent__withoutRight
+        m-pageContent__withoutFooter
+" id="pageContent">
+            <table id="noscriptWarning" style="border-style: none; width: 100%; padding: 0; margin: 0; border-collapse: collapse;">
+                <tr style="border-style: none; width: 100%; padding: 0; margin: 0; border-collapse: collapse;">
+                    <td style="border-style: none; width: 100%; padding: 0; margin: 0; border-collapse: collapse;">
+                        <noscript><p>To properly display this page you need a browser with JavaScript support.</p></noscript>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="b-tree m-tree__contextMenu" id="keywordContextMenu"><table class="b-tree__layout"><tr><td class="b-tree__layoutSide"></td></tr></table></div>
+            <table class="b-pageContent__layout">
+                <tr class="b-pageContent__row m-pageContent__row__header" id="pageContentHeader">
+                    <td class="b-pageContent__side m-pageContent__side__header">
+                                            </td>
+                </tr>
+                <tr>
+                    <td class="b-pageContent__side">
+                    <table id="internal_wrapper"><!-- internal_wrapper -->
+                        <tr>
+
+                    <td class="b-pageContent__side m-pageContent__side__left" id="pageContentLeft"></td>
+                    <td class="b-pageContent__side m-pageContent__side__middle" id="pageContentMiddle">
+                        <script type="text/javascript">
+                        //<![CDATA[
+                            if (1 == 1 && !is_touch_device())
+                                $("#pageContentMiddle").addClass("hidden");
+                        //]]>
+                        </script>
+                        <div class="b-workZone
+" id="workZone">
+                            <table class="b-workZone__layout">
+                                <tr>
+                                    <td class="b-workZone__side m-workZone__side__nav" id="workZone_nav">
+                                        <div class="b-workZone__content m-workZone__content__nav" id="workZone_nav_content">
+                                        <a href="#" class="b-workZone__side__nav__dismiss" id="dismissSideNavButton">&times;</a>
+                                        <div class="b-splitter" id="splitter">
+                                            <div class="b-splitter__innerPre">
+                                                <div class="b-splitter__inner">
+                                                    <div class="b-splitter__part m-splitter__part__mainImg"></div>
+                                                    <div class="b-splitter__part m-splitter__part__topImg"></div>
+                                                    <div class="b-splitter__part m-splitter__part__bottomImg"></div>
+                                                    <div class="b-splitter__part m-splitter__part__middleImg"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+<div class="b-tabs">
+
+
+
+                        <div class="b-tabs__selectorItems">
+
+                            <div class="b-tabs__selectorItem m-tabs__selectorItem__selected m-tabs__selectorItem__first" id="tabSelector_menu">
+                                <span class="b-tabs__selectorItemIcon b-interfaceIcon m-interfaceIcon__menu"></span>
+                                <span class="b-tabs__selectorContent">Menu</span>
+                            </div>
+    
+                            <div class="b-tabs__selectorItem m-tabs__selectorItem__unselected" id="tabSelector_index">
+                                <span class="b-tabs__selectorItemIcon b-interfaceIcon m-interfaceIcon__index"></span>
+                                <span class="b-tabs__selectorContent">Index</span>
+                             </div>
+    
+                            <div class="b-tabs__selectorItem m-tabs__selectorItem__unselected" id="tabSelector_search">
+                                <span class="b-tabs__selectorItemIcon b-interfaceIcon m-interfaceIcon__search"></span>
+                                <span class="b-tabs__selectorContent">Search</span>
+                            </div>
+
+                        </div><!-- /b-tabs__selectorItems -->
+
+                        <div class="b-tabs__wrapperItems" id="tabWrapperItems">
+                        
+                            <div class="b-tabs__wrapperItem m-tabs__wrapperItem__selected" id="tabWrapper_menu">
+                                <div class="b-tabs__wrapperItemInner">
+                                    <div class="b-tree">
+                                    </div>                              
+                                </div>
+                                
+                            </div><!-- /menu -->
+
+                            <div class="b-tabs__wrapperItem" id="tabWrapper_index">
+                                <div class="b-tabs__wrapperItemInner">
+                                    <div class="b-tree"></div></div>
+                            </div>
+
+
+                            <div class="b-tabs__wrapperItem" id="tabWrapper_search">
+
+        
+
+<div class="b-search m-search__tabs" id="tabs_searchFormWrapper">
+    <form action="#" class="b-search__form">
+        <table class="b-search__layout">
+            <tr>
+                <td class="b-search__side m-search__side__input">
+                    <div class="b-search__gap">
+                        <label id="tabs_searchInput_label" for="tabs_searchInput" class="b-search__labelPlaceholder">Search</label>
+                        <input id="tabs_searchInput" type="text" value="" class="b-search__inputText" />
+                    </div>
+                </td>
+                <td class="b-search__side m-search__side__submit">
+                    <span class="b-button b-search__button">
+                        <span class="b-button__wrapper">
+                            <span class="b-button__text"></span>
+                        </span>
+                        <input type="submit" class="b-button__submit" value="Search" id="tabs_searchSubmit" />
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div><!-- /search -->
+<img src="img/i/blocks/search/loading.gif" class="b-tree__searching" id="searchProgress" alt="" />
+<div class="b-tabs__wrapperItemInner">
+
+<!-- .b-tree -->
+<div class="b-tree">
+    <!-- .b-tree__items -->
+    &#xA0;<br />&#xA0;
+    &#xA0;<br />&#xA0;
+    &#xA0;<br />&#xA0;
+    &#xA0;<br />&#xA0;
+    <!-- /.b-tree__items -->
+</div>
+<!-- /.b-tree -->
+
+
+
+                                </div>
+                            </div><!-- /wrapperItem -->
+                        </div><!-- /wrapperItems -->
+                    </div><!-- /b-tabs -->
+
+
+
+
+
+                                        </div><!-- /b-workZone__content -->
+                                    </td><!-- /workZone__nav -->
+
+
+
+                                    <td class="b-workZone__side m-workZone__side__article" id="workZone_article">
+                                        <div class="b-workZone__content" id="workZone_article__content">
+                                            <a href="#" class="b-article__presentSideNavButton" id="presentSideNavButton"><span></span></a>
+                                            <div class="b-workZone__overlay" id="workZone_article__overlay"></div>
+<div class="b-search m-search__workZone" id="searchZone">
+    <form action="#" class="b-search__form">
+        <table class="b-search__layout">
+            <tr>
+                <td class="b-search__side m-search__side__input">
+                    <div class="b-search__gap">
+                        <span class="b-interfaceIcon m-interfaceIcon__search m-interfaceIcon__search__input b-search__inputTextIcon"></span>
+                        <label id="workZone_searchInput_label" for="workZone_searchInput" class="b-search__labelPlaceholder">Search</label>
+                        <input id="workZone_searchInput" type="text" value="" class="b-search__inputText" />
+                    </div>
+                </td>
+                <td class="b-search__side m-search__side__submit">
+                    <span class="b-button b-search__button">
+                        <span class="b-button__wrapper">
+                            <span class="b-button__text"></span>
+                        </span>
+                        <input type="submit" class="b-button__submit" value="Search" id="workZone_searchSubmit" />
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div><!-- /search -->
+
+
+<div class="b-article" id="article">
+    <div class="b-article__preWrapper">
+        <table class="b-article__headerLayout" id="article__header">
+            <tr>
+                <td id="headerSide__nav" class="b-article__headerSide m-article__headerSide__nav">
+                    <div id="headerSide__nav__breadCrumbs" class="b-breadCrumbs">
+                        <ul class="b-breadCrumbs__items"><li class="b-breadCrumbs__item"><a href="terabyte_os_deployment_tool.html" class="b-breadCrumbs__link">TeraByte OS Deployment Tool</a></li>
+
+<li class="b-breadCrumbs__item"><a href="tbosdt_command_reference.html" class="b-breadCrumbs__link">TBOSDT Command Reference</a></li>
+
+<li class="b-breadCrumbs__item">2. Commands for Working with Drives and File Systems</li>
+</ul>                    </div>
+                </td>
+                <td id="headerSide__buttons" class="b-article__headerSide m-article__headerSide__buttons">
+                    <div class="b-controlButtons">
+                        <ul class="b-controlButtons__items">
+                            <li class="b-controlButtons__item m-controlButtons__item__prev"><a href="examples_.html" class="b-controlButtons__link" title="Prev"><span class="b-controlButtons__link_icon"></span><span class="b-controlButtons__link_text">&#xa0;Prev</span></a></li>
+                            <li class="b-controlButtons__item m-controlButtons__item__next"><a href="examples_1.html" class="b-controlButtons__link" title="Next"><span class="b-controlButtons__link_text">Next&#xa0;</span><span class="b-controlButtons__link_icon"></span></a></li>
+                                <li class="b-controlButtons__item m-controlButtons__item__print"><a href="2__commands_for_working_with_drives_and_file_systems_print.html" class="b-controlButtons__link"><span class="b-interfaceIcon m-interfaceIcon__print"></span>Print version</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="b-article__wrapper">
+            <div class="b-article__innerWrapper" id="description_on_page_placeholder">
+            <a id="top" class="anchor"></a>
+            </div><!-- /innerWrapper -->
+        </div>
+        <script type="text/javascript">
+        //<![CDATA[
+            if (1 == 0 || is_touch_device())
+            {
+                $(".b-article__wrapper").append(
+                    $("<table></table>")
+                    .addClass("b-article__footerLayout")
+                    .prop("id", "article__footer")
+                    .append(
+                        $("<tr></tr>").append(
+                            $("<td></td>")
+                            .addClass("b-article__headerSide m-article__headerSide__nav")
+                        )
+                        .append(
+                            $("<td></td>")
+                            .addClass("b-article__headerSide m-article__headerSide__buttons")
+                            .append(
+                                $("<div></div>").addClass("b-controlButtons")
+                                .html($("<ul></ul>").addClass("b-controlButtons__items").html("    <li class=\"b-controlButtons__item m-controlButtons__item__prev\"><a href=\"examples_.html\" class=\"b-controlButtons__link\" title=\"Prev\"><span class=\"b-controlButtons__link_icon\"></span><span class=\"b-controlButtons__link_text\">&#xa0;Prev</span></a></li>\n    <li class=\"b-controlButtons__item m-controlButtons__item__next\"><a href=\"examples_1.html\" class=\"b-controlButtons__link\" title=\"Next\"><span class=\"b-controlButtons__link_text\">Next&#xa0;</span><span class=\"b-controlButtons__link_icon\"></span></a></li>\n        <li class=\"b-controlButtons__item m-controlButtons__item__print\"><a href=\"2__commands_for_working_with_drives_and_file_systems_print.html\" class=\"b-controlButtons__link\"><span class=\"b-interfaceIcon m-interfaceIcon__print\"></span>Print version</a></li>\n"))
+                            )
+                        )
+                    )
+                );
+            }
+        //]]>
+        </script>
+    </div>
+</div>
+
+
+
+                                        </div>
+                                    </td><!-- /workZone__article -->
+                                </tr>
+                            </table>
+                        </div><!-- /workZone -->
+
+                    </td><!-- /pageContentMiddle -->
+                    <td class="b-pageContent__side m-pageContent__side__right" id="pageContentRight"></td>
+                        </tr>
+                    </table> <!-- /internal_wrapper -->
+                    </td>
+                </tr>
+                <tr class="b-pageContent__row m-pageContent__row__footer" id="pageContentFooter">
+                    <td class="b-pageContent__side m-pageContent__side__footer">
+                        <script type="text/javascript">
+                        //<![CDATA[
+                            if (1 == 1 && !is_touch_device())
+                                $( "#pageContentFooter" ).addClass("hidden");
+                        //]]>
+                        </script>
+                                            </td>
+                </tr>
+            </table>
+        </div><!-- /pageContent -->
+
+</div><!-- /pageLayout -->
+<div id="hiddenContent" class="hiddenContent">
+    <noscript>
+    <div>To properly display this page you need a browser with JavaScript support.</div>
+    </noscript>
+                <div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>2. Commands for Working with Drives and File Systems</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 1px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100%; vertical-align: top; background-color: #ffffc9;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Important:</strong> When using the Linux version of TBOSDT, all command line options are specified by using a &quot;</span><span class="de_234BF4948A">-</span><span class="de_CC7DAF531E">&quot; instead of a &quot;</span><span class="de_234BF4948A">/</span><span class="de_CC7DAF531E">&quot;. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Example:</strong> </span><span class="de_234BF4948A">LIST HD 0 -f</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 35%;" class="de_col_1_201" />
+<col style="width: 65%;" class="de_col_2_375" />
+<tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Command Function</strong></span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Command Syntax</strong></span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Open a file system (associate a file systemb with a drive). The drive must be a number 0 through 9.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">OPEN FS drive: phydrivenum [partitionid]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">OPEN FS drive: filename [partitionid] </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">MOUNT drive: filename [partitionid]</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Close a file system</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">CLOSE FS drive:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">UMOUNT drive:</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Assign additional UEFI file systems a drive letter. UEFI version only.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">OPEN UEFIFS</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Close the additional UEFI file system opened. UEFI version only.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">CLOSE UEFIFS</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Display statistics for a file system</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">STATS d:</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Display volume label for a file system</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST VOL [d:]</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the volume label for a file system.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Currently supported for mounted drives 0: through 9: and drive letters using the Windows version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET VOL &quot;volume name&quot; [d:]</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">List partitions on a hard drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST HD hdnum [/f][/u][/q][/w][/s][/a=n]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - include free space in listing</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /u - include unallocated areas in listing</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use volume sequence as volume id</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /w - use wide format</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - list disk signature(s)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /a - alignment value in sectors (0=cylinder).</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">List partition details</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(1.45+ version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST PART hdnum partid [/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use volume sequence as volume id</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">List a volume serial number for FAT/FAT32/NTFS partitions or UUID for Ext2/3/4 partitions </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro Versions 1.50+ Only)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST VOLSN phyhdnum partid [/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q – use sequence for volume id</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Open hard drive level software cache.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">OPEN CACHE hdnum [size][/l=limit][/p][/z]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /l - max io request size to cache.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /p - enable partial lazy writing.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /z - enable full lazy writing.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">Enabling lazy writing can result in unknown data loss. Always attempt to CLOSE CACHE when lazy writing is enabled to get a report of any write failures. The cache is automatically closed when the device it’s no longer being used. When closed automatically, no write failure errors are reported.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Close hard drive level software cache or force it to flush to disk.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">CLOSE CACHE hd [/f][/w]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force close (ignore lazy write errors).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /w - flush lazy writes to disk only.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Copy a partition to a file</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">COPY PARTITION phyhdnum partid targetfile [/b][/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /b - setup for use with bootfile application.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Add a virtual FAT drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">ADD VIRTDRV filename sizeinmb [volname] [/b] [/c=n] [/h=n] [/s=n][/l][/w][/fat32][/blocksize=n][/w][/bs=filename] [/bsraw][/empty]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /b - setup for use with bootfile application</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /l - limit virtual drive file size.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /w - treat warning as error.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /empty – create an empty file.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /fat32 – try using FAT32 instead of FAT as file system.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /blocksize – size of a sector in bytes.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /bs – name of file containing boot sector code to use.</span><span class="de_67B4B21911"> (note: fat/fat32 only)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /bsraw – overlay raw boot sector (/bs) with existing BPB.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The c h s values all need to be provided for them to be used. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">They can be used to create floppy sized virtual drives by making sizeinmb zero and providing the c, h, and s values (remember for c and h the last value is one less than the total count of cylinders or heads. e.g. h=254 means total of 255 heads).</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Add a virtual PC VHD drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">ADD VHD filename sizeinmb [/f]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f – create a fixed type VHD drive.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Expand a virtual PC VHD drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET VHDSIZE filename sizeinmb</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Add a VHDX drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">ADD VHDX filename sizeinmb [/f][/s4]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f – create a fixed type VHD drive.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s4 – Use sector size of 4KiB (4096 bytes).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">For Windows caching reasons, it is highly recommended to create partitions within a VHDX file that are aligned on at least a 1MiB boundary. That is either 2048 sectors for 512 byte sized sectors or 256 sectors for 4096 byte sized sectors.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Expand a VHDX drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET VHDXSIZE filename sizeinmb</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Add a vmware VMDK drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">ADD VMDK filename sizeinmb [/f]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s – create a SCSI type VMDK drive.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Expand a vmware VMDK drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET VMDKSIZE filename sizeinmb</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Add a partition</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt Version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">ADD PARTITION hdnum partid sizeinmib fsid name [fsb] [/q] [/n] [/f] [/e] [/a=n] [/c=n] [/h=n] [/s=n] [/b=n] [/u] [/w] [/bs=filename] [/bsraw]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; fsid - file system identifier (6=FAT,7=NTFS,11=FAT32,…) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; name - name for new partition (gpt/embr).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; fsb - free space before size in MiB (omit for end of block).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /n - use \&quot;normal\&quot; geometry.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force ending head/sector in MBR.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /e - align on end.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /a - alignment value in sectors (0=cylinder).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /b - bytes per cluster</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /u - leave unformatted (default when fsid format not supported)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /w - treat warning as error.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /bs - name of file containing boot sector code to use. </span><span class="de_67B4B21911"> (note: fat/f32 only)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /bsraw – overlay raw boot sector (/bs) with existing BPB.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Delete a partition</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt Version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">DEL PARTITION hdnum partid [/q][/y]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /y - no confirmation to perform delete.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Slide a partition</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt Version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SLIDE hd id [fsb] [/q] [/n] [/f] [/e] [/r] [/a=n] [/c=n] [/h=n][/s=n] [/z]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; hd - hard drive number. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; id - partition id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; fsb - free space before size in MiB (omit for end of block).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /n - use &quot;normal&quot; geometry.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force ending head/sector in MBR.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /e - align on end.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /r - raw slide (move unused sectors).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /a - alignment value in sectors (0=cylinder).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /z - no progress display.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Copy a partition</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt Version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">COPY PARTITION hd id thd tid [fsb] [/q] [/n] [/f] [/e] [/r] [/a=n] [/c=n] [/h=n] [/s=n] [/b] [/z] [/i]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; hd - source hard drive number. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; id - source partition id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; thd - target hard drive number. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; tid - target partition id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; fsb - free space before size in MiB (omit for end of block).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /n - use &quot;normal&quot; geometry.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force ending head/sector in MBR.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /e - align on end.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /r - raw copy (copy unused sectors).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /a - alignment value in sectors (0=cylinder).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /b - assume original hd for boot.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /z - no progress display.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /i - ignore lock failures.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Resize a partition</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt Version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">RESIZE hdnum partid [newsizemb] [/q] [/n] [/f] [/e] [/b] [/a=n] [/c=n] [/h=n] [/s=n] [/z]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /n - use &quot;normal&quot; geometry.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force ending head/sector in MBR.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /e - align on end.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /b - resize beginning (extended partitions only)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /a - alignment value in sectors (0=cylinder).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /z - no progress display.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set a volume serial number for FAT/FAT32/NTFS partitions or UUID for Ext2/3/4 partitions </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro Versions 1.50+ Only)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET VOLSN phyhdnum partid serialnumber [/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q – use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set a partition active</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET PART ACTIVE phyhdnum partid [/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the CHS values for a partition entry</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET PART GEO phyhdnum partid [/C=lastcyl][/H=lasthead][/S=sectorspertrack][/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the partition type</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt 1.45+ version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET PART TYPE phyhdnum partid fsid|{guid}[/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the partition attribute flag </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt 1.45+ version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET PART ATTR phyhdnum partid attrvalue[/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the partition ID</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt 1.45+ version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET PART ID phyhdnum partid id|{guid}[/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q - use sequence for volume id.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set a drives partitioning type </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro for BootIt 1.45+ version)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET DISKTYPE phyhdnum mbr | embr | gpt [/n] [/f] [/c=n] [/h=n] [/s=n] [/u]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /n - use &quot;normal&quot; geometry.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /f - force ending head/sector in MBR.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - last cylinder value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /h - last head value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - sectors per track value.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /u - unlimit primaries (EMBR related)</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Delete EMBR (keeping MBR)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">DEL EMBR phyhdnum</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set the Disk ID</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_67B4B21911">(the two commands are equivalent. &quot;newid&quot; can be either the disk GPT {guid} or MBR signature. The &quot;set diskid&quot; command was added in version 1.72)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET DISKID phyhdnum newid </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET MBR SIG phyhdnum newid</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Change Windows BCD or MountedDevices references. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">(Pro Versions 1.57+ Only)</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET REF [BCD|MountedDevices|All] phyhdnum partid orgdiskref orgpartref [newdiskref newpartref] [/oss] [/dno] [/q]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; orgdiskref – original disk guid or MBR signature. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; orgpartref – original partition guid or starting lba. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; newdiskref – optional new disk guid or MBR signature. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; newpartref – optional new partition guid or starting lba.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /oss – original sector size</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /dno – disable changing only new to original.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /q – use sequence for volume id.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">If a GUID is used for a partition or disk reference then both must reference a GUID.</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Install MBR code on a hard drive</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET MBR CODE phyhdnum [type]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; type can be &quot;standard&quot; or &quot;win7&quot;</span></div>
+</td></tr><tr style="height: 7px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Copy sectors to/from a file.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">COPY SECTORS phyhdnum lba numsectors file [/w][/y]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /w – write sectors from file (otherwise read sectors to file)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /y – skip confirmation when /w used.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">When /w is not specified this command reads sectors from a drive and saves them to a file. When /w is specified it reads data from a file and writes it to sectors on the drive.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">The /w parameter is intended for use by those who know exactly what they are doing. You must be very careful when using the /w parameter. It is only available in interactive mode and will abort in script mode</span><span class="de_CC7DAF531E">.</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">TBOSDT has the ability to </span><span class="de_234BF4948A">OPEN </span><span class="de_CC7DAF531E">(or </span><span class="de_234BF4948A">MOUNT</span><span class="de_CC7DAF531E">) partitions on physical hard drives, as well as file systems contained within a file – such as an ISO file, or a file containing an image of a floppy diskette or hard drive. These drives are assigned a number <strong>from 0 through 9 </strong>when opened, and then referenced in subsequent commands by using that number plus a colon. The following are some example sequences showing how these commands can be used:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>                	<div class="menu_on_page">
+		<h2>2. Commands for Working with Drives and File Systems</h2>
+		<div class="m-workZone_seeAlso_itemContent">
+	<span class="b-tree__spacer">
+		<span class="b-tree__i_article">
+			<span class="b-tree__i_article_inner"></span>
+		</span>
+	</span>
+	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="examples_1.html">Examples</a></span>
+</div>	</div>
+                    			
+                			</div>
+</body>
+</html>

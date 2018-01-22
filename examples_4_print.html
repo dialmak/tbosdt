@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>Examples</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>Examples</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="New_normal"><strong>Installing a Windows driver with COPY INF (any version)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The </span><span class="de_234BF4948A">COPY INF </span><span class="de_CC7DAF531E">command can be used to install a Windows driver to an inactive (not running) Windows installation by mounting the partition from TBOSDT, opening the system hive file, and then running </span><span class="de_234BF4948A">COPY INF</span><span class="de_CC7DAF531E">. The INF file and its associated driver files (typically a SYS file and a CAT file) must be in the same directory. Note that while the </span><span class="de_234BF4948A">COPY INF </span><span class="de_CC7DAF531E">command will install the drivers and allow the system to boot, it will be necessary to use the additional </span><span class="de_234BF4948A">ADD INF </span><span class="de_CC7DAF531E">command to automate completion of the driver installation. See example 2 in the TBOST Application Examples section for additional information on installing a Windows driver.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 58%;" class="de_col_1_334" />
+<col style="width: 42%;" class="de_col_2_242" />
+<tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">MOUNT 0: 0 1</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">mount partition with ID =1 on drive HD0</span></div>
+</td></tr><tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">OPEN REG 0 0:\windows\system32\config\system</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">open the system registry hive</span></div>
+</td></tr><tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">COPY INF vmscsi.inf 0:\windows c:\windows 0 /i /b</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Install the driver, /b indicates driver isrequired for boot</span></div>
+</td></tr><tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">CLOSE REG 0</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">close the system registry hive</span></div>
+</td></tr><tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">UMOUNT 0:</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">unmount the partition</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="New_normal"><strong>Using ADD INF to complete a Windows driver installation (Windows version only)</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The </span><span class="de_234BF4948A">ADD INF</span><span class="de_CC7DAF531E"> command will add an INF and associated files to the Windows operating system. You must supply the full path to the INF file. A practical use of this command is to aid in the automated completion of a new driver installation after a </span><span class="de_234BF4948A">COPY INF </span><span class="de_CC7DAF531E">command has been executed for the same driver. This example assumes the full set of driver files is located in c:\drivers\intel</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 58%;" class="de_col_1_334" />
+<col style="width: 42%;" class="de_col_2_242" />
+<tr style="height: 1px;">
+<td class="de_td_334" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 58%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_234BF4948A">ADD INF c:\drivers\intel\iaahci.inf c:\drivers\intel</span></div>
+</td><td class="de_td_242" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 42%; vertical-align: middle; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">add the driver files (if necessary)</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

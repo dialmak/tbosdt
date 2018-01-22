@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>OSSTAT Subroutine</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>OSSTAT Subroutine</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Usage: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">r = OSSTAT(&quot;filename&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Description: </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">This subroutine is used to obtain information on files and folders directly available to the OS.&#160; It is mainly useful under Linux when you want to obtain information about special files (device, symlink, etc.).&#160; The return value of 1 or 0 indicates success or failure respectively.&#160; The return value contains several members that provide information about the file.&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The member names are:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 14%;" class="de_col_1_80" />
+<col style="width: 86%;" class="de_col_2_496" />
+<tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_DEV</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The ID of the device containing the file</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_INO</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The inode number of the file</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_MODE</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The files attributes and permissions</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_NLINK</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The number of hard links to this file</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_UID</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The owners user ID</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_GID</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The owners group ID</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_RDEV</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The device ID (special files)</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_SIZE</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The total file size in bytes</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_ATIME</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Last access time (number of seconds since Jan 1, 1970)</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_MTIME</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Last modified time (number of seconds since Jan 1, 1970)</span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_80" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 14%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AE43A86E79">ST_CTIME</span></div>
+</td><td class="de_td_496" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #f2f2f2; border-right-style: solid; border-right-width: 1px; border-right-color: #f2f2f2; border-top-style: solid; border-top-width: 1px; border-top-color: #f2f2f2; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #f2f2f2;  width: 86%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Last status change time (number of seconds since Jan 1, 1970)</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Example: </strong></span><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 0px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #000000; border-right-style: none; border-right-width: 0px; border-right-color: #000000; border-top-style: none; border-top-width: 0px; border-top-color: #000000; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #000000;  width: 100%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">sub main()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;stat=osstat(&quot;testfile.txt&quot;)&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;if stat then </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_DEV:&quot;, stat.st_dev) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_INO:&quot;, stat.st_ino) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_MODE:&quot;, hex(stat.st_mode)) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_NLINK:&quot;, stat.st_nlink) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_UID:&quot;, hex(stat.st_uid)) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_GID:&quot;, hex(stat.st_gid)) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_RDEV:&quot;, stat.st_rdev) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_SIZE:&quot;, stat.st_size) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_ATIME:&quot;, stat.st_atime) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_MTIME:&quot;, stat.st_mtime) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;ST_CTIME:&quot;, stat.st_ctime) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;else </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(&quot;OSSTAT Failed&quot;) </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;end if </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">end sub</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

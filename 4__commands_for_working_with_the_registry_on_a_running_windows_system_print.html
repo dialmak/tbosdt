@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>4. Commands for Working with the Registry on a Running Windows System</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>4. Commands for Working with the Registry on a Running Windows System</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 1px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100%; vertical-align: top; background-color: #ffffc9;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>NOTE:</strong> All commands in this section are available <strong>only in the Windows version</strong> of TBOSDT</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 35%;" class="de_col_1_201" />
+<col style="width: 65%;" class="de_col_2_375" />
+<tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Command Function</strong></span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Command Syntax</strong></span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Associate a registry key with a numeric id k.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">OPEN WINKEY k keyname base [/c][/r]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /r – open read-only.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /c - create key if not found.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; base - HKLM, HKCR, HKU, HKCU.</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Remove the numeric id associated with a registry key.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">CLOSE WINKEY k</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Display keys found in another key.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST WINKEYS keynum [subkeyname]</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Delete a registry key.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">DEL WINKEY k keyname [/s]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /s - delete all subkeys.</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">List value names located in a key.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST WINVALUES keynum [subkeyname] [/d]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; /d - list value data</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">List the contents of a single value in a registry key.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">LIST WINVALUE keynum [subkeyname] valuename</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Set a registry value.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">SET WINVALUE k valuename valuetype value</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; valuetype: none, sz, expandsz, hex, dword, multisz, qword</span></div>
+</td></tr><tr style="height: 3px;">
+<td class="de_td_201" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 35%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Delete a registry value.</span></div>
+</td><td class="de_td_375" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #1f497d; border-right-style: solid; border-right-width: 1px; border-right-color: #1f497d; border-top-style: solid; border-top-width: 1px; border-top-color: #1f497d; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #1f497d;  width: 65%; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">DEL WINVALUE k valuename</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

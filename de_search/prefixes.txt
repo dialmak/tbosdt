@@ -1,0 +1,108 @@
+0xu0030
+ 0
+ 0XMMMMMMMM
+0xu0031
+ 1
+ 1ST
+0xu0032
+ 2
+ 2TIB
+0xu0033
+ 3
+ 3:FILENAME
+0xu0034
+ 4
+ 4KIB
+0xu0035
+ 5
+ 57
+0xu0036
+ 6
+ 66
+0xu0037
+ 7
+ 76
+0xu0038
+ 8
+ 8BE4DF61-93CA-11D2-AA0D-00E098032B8C
+0xu0039
+ 9
+ 93CA
+0xu0041
+ A
+ A[2
+0xu0042
+ B
+ B][/Q
+0xu0043
+ C
+ C][/R
+0xu0044
+ D
+ D][[/B][/A
+0xu0045
+ E
+ EXTRACTS
+0xu0046
+ F
+ F][/W
+0xu0047
+ G
+ GUID}[/Q
+0xu0048
+ H
+ HYPER-V
+0xu0049
+ I
+ IT’S
+0xu004a
+ JAN
+ JUSTIFIED
+0xu004b
+ K
+ K][/C
+0xu004c
+ L
+ LS-120
+0xu004d
+ M
+ MY_SQRT(81
+0xu004e
+ N
+ N][/W][/BS
+0xu004f
+ O
+ OWNERS
+0xu0050
+ P
+ P][/R
+0xu0051
+ Q
+ Q][/Y
+0xu0052
+ R
+ R][/F
+0xu0053
+ S
+ S][/Y][/N][/Q
+0xu0054
+ T
+ TYPING
+0xu0055
+ U
+ UUID
+0xu0056
+ V
+ VV
+0xu0057
+ W
+ W][/Y
+0xu0058
+ X
+ XYZ
+0xu0059
+ Y
+ Y][/S
+0xu005a
+ Z
+ ZIP

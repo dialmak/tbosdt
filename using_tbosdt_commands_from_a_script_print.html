@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>Using TBOSDT Commands from a Script</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>Using TBOSDT Commands from a Script</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">A TBOSDT script consists of a text file that contains one or more commands, listed in the order to be executed. Comments can be included in the script by putting a semi-colon (</span><span class="de_234BF4948A">;</span><span class="de_CC7DAF531E">) at the beginning of the line. Blank lines can also be used to improve readability when viewing the file. A TBOSDT script can be executed in two ways:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>From the OS command line:</strong> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">Start TBOSDT with the name of the script file as the command line parameter (e.g. </span><span class="de_234BF4948A">tbosdt myscript.run </span><span class="de_CC7DAF531E">or</span><span class="de_234BF4948A"> tbosdt myscript.tbs</span><span class="de_CC7DAF531E">). When all commands have been executed, TBOSDT will return to the OS command prompt, and all mounted drives and open files will be automatically unmounted or closed. The exception to this is when the </span><span class="de_234BF4948A">INTERACTIVE</span><span class="de_CC7DAF531E"> or </span><span class="de_234BF4948A">STAY</span><span class="de_CC7DAF531E"> command is used within the script. The </span><span class="de_234BF4948A">INTERACTIVE</span><span class="de_CC7DAF531E"> command will cause the script to stop executing at that point, and leave you in interactive mode within TBOSDT. Any drives mounted at that point will remain mounted, any registry files opened will remain open, and commands can be executed manually from the TBOSDT prompt. To leave interactive mode, type </span><span class="de_234BF4948A">EXIT</span><span class="de_CC7DAF531E"> at the prompt. This will cause the running script to continue executing the remaining commands (if any) in the script, and then exit normally to the OS command prompt. The </span><span class="de_234BF4948A">STAY</span><span class="de_CC7DAF531E"> command also switches to interactive mode but only once the script has completed.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>By using the RUN command:</strong> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The </span><span class="de_234BF4948A">RUN</span><span class="de_CC7DAF531E"> command can be used to execute a script from interactive mode or from another script. The </span><span class="de_234BF4948A">RUN</span><span class="de_CC7DAF531E"> command syntax is simply </span><span class="de_234BF4948A">RUN &lt;script&gt;</span><span class="de_CC7DAF531E">. The </span><span class="de_234BF4948A">RUN</span><span class="de_CC7DAF531E"> command will execute the script, and then return to interactive mode, or to the calling script. When using the </span><span class="de_234BF4948A">RUN</span><span class="de_CC7DAF531E"> command from interactive mode, any drives mounted, registry files opened, or registry keys opened will remain that way when the script terminates, unless they have been explicitly unmounted or closed by the script. Starting with TBOSDT version 1.42, if the script to be run has a <strong>.TBS</strong> (case insensitive) extension, it will be launched as a TBScript </span><span class="de_234BF4948A">RUNTBS</span><span class="de_CC7DAF531E"> instead of a normal TBOSDT script.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">If an error is encountered while executing a script, an error message will be displayed on the console, and the script will terminate. The error message will indicate the line number of the script where the error was encountered, along with some specifics about the nature of the error.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>

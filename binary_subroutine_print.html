@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/printed.css" media="all" rel="StyleSheet" type="text/css" />
+		<link href="de_style.css" media="all" rel="StyleSheet" type="text/css" />
+		<meta name="generator" content="www.DrExplain.com" />
+				<title>BINARY Subroutine</title>
+	</head>
+	<body>
+		<table class="pagetable">
+			<tr class="page" style="border-color: #ffffff;">
+				<td class="page_area" style="border-color: #ffffff; width: 100%;"><div class="description_on_page"><div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>BINARY Subroutine</strong></h1></div></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Usage:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">newvariant = BINARY(variant [[[[, type], startoffset], length], binvartoupdate])</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Description:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">This subroutine sets or extracts binary data types (used for binary file operations or uefi variables). When </span><span class="de_111311456D">variant </span><span class="de_CC7DAF531E">is a binary data type and </span><span class="de_111311456D">binvartoupdate </span><span class="de_CC7DAF531E">is not provided then this subroutine exacts data from </span><span class="de_111311456D">variant </span><span class="de_CC7DAF531E">to create a new variable of </span><span class="de_111311456D">type</span><span class="de_CC7DAF531E">. When </span><span class="de_111311456D">variant </span><span class="de_CC7DAF531E">is not a binary data type or </span><span class="de_111311456D">binvartoupdate </span><span class="de_CC7DAF531E">is provided then this subroutine returns a new binary data type. When not provided the optional parameters are zero. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The values for </span><span class="de_111311456D">type </span><span class="de_CC7DAF531E">are as follows: </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; &#160; 0 = String;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; &#160; 1 = Hex String;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; &#160; 2 = Wide String;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; &#160; 3 = Numeric;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">&#160; &#160; 4 = Binary.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">The </span><span class="de_111311456D">startoffset </span><span class="de_CC7DAF531E">is the zero based starting offset to the data to extract from or set in </span><span class="de_111311456D">newvariant</span><span class="de_CC7DAF531E">. The </span><span class="de_111311456D">length </span><span class="de_CC7DAF531E">specifies the number of bytes of data to extract from or set in </span><span class="de_111311456D">newvariant</span><span class="de_CC7DAF531E">. When the </span><span class="de_111311456D">length </span><span class="de_CC7DAF531E">is zero it is assumed to be the same length as </span><span class="de_111311456D">variant</span><span class="de_CC7DAF531E">. When </span><span class="de_111311456D">binvartoupdate </span><span class="de_CC7DAF531E">is provided it will be used as the basis of </span><span class="de_111311456D">newvariant </span><span class="de_CC7DAF531E">to allow updating an existing binary variable.&#160; </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E">This subroutine was added in TBSVER 3 and enhanced with type, startoffset, length, and binvartoupdate in TBSVER 9.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC7DAF531E"><strong>Example:</strong></span><table class="de_tbl_576 detbl" style="width: 100%; margin-left: 0; margin-right: auto;">
+<col style="width: 100%;" class="de_col_1_576" />
+<tr style="height: 38px;">
+<td class="de_td_576" style = "padding: 2px; padding-bottom: 1px; border-left-style: none; border-left-width: 0px; border-left-color: #000000; border-right-style: none; border-right-width: 0px; border-right-color: #000000; border-top-style: none; border-top-width: 0px; border-top-color: #000000; border-bottom-style: none; border-bottom-width: 0px; border-bottom-color: #000000;  width: 100%; vertical-align: top; background-color: #f2f2f2;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">sub main() </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=BINARY(&quot;STRING&quot;)&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 53 54 52 49 4E 47 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=BINARY(0, 3, 0, 1)&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 00 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=bindata # bindata &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 00 00 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=BINARY(&quot;3031323334&quot;, 1)&#160; &#160; &#160; &#160; &#160; &#160; // 30 31 32 33 34 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=BINARY(&quot;353637&quot;, 1, 5, 0, bindata) &#160; &#160; // 30 31 32 33 34 35 36 37 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; word=BINARY(bindata, 3, 0, 2)&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 0x3130 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; bindata=BINARY(&quot;55AA&quot;, 1, 1, 3)&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 00 55 AA 00 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">&#160;&#160; printl(len(bindata)) &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; // 4 </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_937E0348B4">end sub</span></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</div>				</td>
+			</tr>
+		</table>
+	</body>
+</html>
