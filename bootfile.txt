@@ -1,0 +1,235 @@
+BOOTFILE
+~~~~~~~~
+BOOTFILE is a program that can be used to set up the MBR to boot an NTFS, FAT,
+or FAT32 partition that is contained in a continuous file in an NTFS, FAT, or
+FAT32 partition.
+
+   * The boot feature is available only in the Windows version of BOOTFILE.
+
+   * The file specified is expected to be 512 bytes larger than then actual
+     partition or file system size.
+
+BOOTFILE is also used to restore the original MBR after booting.
+
+   * The MBR-restore feature is available in the Windows, DOS, and Linux
+     versions of BOOTFILE.
+
+   * When booting a partition using BOOTFILE, the MBR-restore should be
+     performed as soon as possible.  For example, if using DOS, place the
+     "bootfile" MBR-restore command line in the first line of \AUTOEXEC.BAT;
+     or, if using TBOS, place the "bootfile.exe" command line in the first line
+     of \TBOS.STR (the .exe is needed).
+
+NOTES:
+~~~~~~
+For Windows 9x platforms, the two DLLs included in the support directory
+(TLIBR16.DLL and TLIBR32.DLL) are needed for BOOTFILE to function.  These DLLs
+should be placed in the same folder where BOOTFILE.EXE resides.
+
+For Windows NT/200x/XP/Vista/etc.. platforms, BOOTFILE must be run in the context 
+of a user who is a member of the Administrators group for the local machine.
+
+BOOT USAGE (Windows only):
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+bootfile d:\filename [/keep] [/noui] [/noboot] [/bootunsafeifhung] [/bootunsafe]
+                     [/retry] [/delay] [/ignoresig]
+
+   d:\filename       -- [required]  You must supply the full path to the file
+                        name.
+
+   /keep             -- [optional]  This option is used to keep the existing
+                        partition entries in the MBR.  If this switch is used,
+                        there must be at least one free entry in the partition
+                        table for the emulated entry to be added.  If this
+                        switch is not used, then only the emulated entry will
+                        exist in the partition table.
+
+   /noui             -- [optional]  This switch prevents the message box from
+                        showing if a problem occurs.  The errorlevel returned
+                        by BOOTFILE can be used in a script to detect a problem.
+
+   /noboot           -- [optional]  This switch prevents the MBR from being
+                        changed by the command, and also prevents the system
+                        from being restarted when the command is run.
+
+   /bootunsafeifhung -- [optional]  This switch forces a reboot even if the
+                        system does not indicate that it is OK to shut down
+                        (e.g. if some running program is hung or waiting for
+                        user input).  This switch may work the same as
+                        /bootunsafe on newer versions of Windows.  This switch
+                        has no meaning if the /noboot switch is also used.
+
+   /bootunsafe       -- [optional]  This switch forces a reboot without asking
+                        the system if it is OK to shut down.  This switch has no
+                        meaning if the /noboot switch is also used.
+
+   /retry            -- [optional]  Used to enable multiple retries when the
+                        file system cache appears to not have been flushed.
+
+   /delay            -- [optional]  Wait 8 seconds after volume flush to ensure
+                        file system cache has been flushed to disk.
+
+   /wait             -- [optional]  Wait up to 8 seconds for file to show up on 
+                        disk.
+
+   /ignoresig        -- [optional]  Do not set the NT disk signature when it
+                        is zero.  
+
+
+MBR RESTORE USAGE (Windows only):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bootfile /RESTORE [/noui] [/ignoresig] [/verbose]
+
+   /noui             -- [optional]  This switch prevents the message box from
+                        showing if a problem occurs.  The errorlevel returned
+                        by BOOTFILE can be used in a script to detect a problem.
+
+   /ignoresig        -- [optional]  This switch allows the saved MBR to be
+                        restored even if the NT disk signatures do not match.
+
+   /verbose          -- [optional]  Outputs additional information to console.
+
+
+MBR RESTORE ONLY USAGE (DOS/Linux only):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bootfile [/noui] [/ignoresig] [/verbose]
+
+   /noui             -- [optional]  This switch prevents the message box from
+                        showing if a problem occurs.  The errorlevel returned
+                        by BOOTFILE can be used in a script to detect a problem.
+
+   /ignoresig        -- [optional]  This switch allows the saved MBR to be
+                        restored even if the NT disk signatures do not match.
+
+   /verbose          -- [optional]  Outputs additional information
+
+REBOOT USAGE (All):
+~~~~~~~~~~~~~~~~~~~
+bootfile /REBOOT [/bootunsafeifhung] [/bootunsafe] [/ noui]
+
+Reboots the computer.
+
+   /bootunsafeifhung -- [optional]  Only applies to Windows and is described
+                        above.
+
+   /bootunsafe       -- [optional]  Only applies to Windows and is described
+                        above.
+
+   /noui             -- [optional]  This switch prevents the message box from
+                        showing if a problem occurs.  The errorlevel returned
+                        by BOOTFILE can be used in a script to detect a problem.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          EXAMPLE BOOTFILE SETUP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+As discussed above, the BOOTFILE utility can be used to boot a system from 
+a file system contained within a file. This section will give two examples 
+of creating such a file to be used by BOOTFILE.
+
+
+Example 1: Start with a partition already containing a bootable copy of DOS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this example, it's assumed we already have a partition containing a
+bootable copy of DOS. The goal is to copy the DOS partition to a file, 
+and then boot from that file using BOOTFILE. The steps below will list
+and explain the TBOSDT and BOOTFILE commands required to accomplish this.
+
+1. Use TBOSDT to copy the DOS partition into a file:
+
+copy partition 0 0x1 d:\partcopy.bin /b
+
+The command line above runs the "copy partition" function to copy the
+partition with ID 0x1 on hard drive 0 into the file d:\partcopy.bin.
+The /b option adds 1 sector to the file in preparation for using it with
+the BOOTFILE utility. That extra sector is used by BOOTFILE to save the 
+original MBR when the file is booted from. Note that partition ID numbers 
+can be determined for a given hard drive by using the LIST HD command in 
+TBOSDT. Example: list hd 0
+
+2. Use TBOSDT to mount the file created in step 1 as drive 0: 
+
+mount 0: d:\partcopy.bin
+
+3. Use TBOSDT to copy the *DOS/TBOS* version of bootfile.exe to the 
+mounted file system: 
+
+copy file bootfile.exe 0:
+
+4. Use TBOSDT to create or modify the autoexec.bat file:
+
+set textline 0:\autoexec.bat "bootfile.exe" /b
+
+In the above command, the SET TEXTLINE command is used to insert the line
+"bootfile.exe" in the autoexec.bat file. That line is necessary in order
+to restore the original MBR after the file is booted from - so that the 
+next reboot will boot the system normally again.
+
+If autoexec.bat already exists, the command will add the quoted text as the
+first line in the file. If autoexec.bat does not already exist, the command
+will create the file, and then write the quoted text to it. If desired, the
+SET TEXTLINE command can be used to add/delete other lines in autoexec.bat at
+this time.
+
+5. Be sure to EXIT from TBOSDT at this point so that drive 0: is unmounted.
+Exiting TBOSDT automatically unmounts the drive.
+
+6. Run the *Windows* version of BOOTFILE to boot the system from the file:
+
+bootfile d:\partcopy.bin  (full path to partcopy.bin must be given)
+
+The command above updates the MBR to boot from d:\partcopy.bin, and then
+initiates a system reboot. Because of the way d:\partcopy.bin was updated
+in steps 3 and 4, bootfile.exe and autoexec.bat will be in place, and booting
+the file should be successful. On the next reboot, the system should boot
+normally, the same as before.
+
+
+Example 2: Create a FAT file system, prepare with TBOS, boot with BOOTFILE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this example we will create a FAT file system in a file, prepare it to 
+boot into TBOS, and then boot the file with the BOOTFILE utility.
+
+1. Use TBOSDT to create a new 32 MB FAT file system in a file:
+
+add virtdrv d:\tbos.bin 32 TBOS /b
+
+The above command creates a 32 MB file at d:\tbos.bin, formatted with the 
+FAT filesystem, and with "TBOS" as the volume label. The /b option adds one 
+sector to the file in preparation for use with the BOOTFILE utility.
+
+2: Create a tbos.str file for TBOS:
+
+set textline tbos.str "bootfile.exe" /b
+
+The file tbos.str is the TBOS equivalent of autoexec.bat for DOS. In the 
+above command, the SET TEXTLINE command is used to create the file, and 
+then add the line "bootfile.exe" to it. That line is necessary in order 
+to restore the original MBR after the file is booted from - so that the 
+next reboot will boot the system normally again. If desired, SET TEXTLINE 
+can be used to add additional lines to the tbos.str - to execute other 
+commands as needed.
+
+3. Install TBOS to the file, and copy required files to it at the same time:
+
+tbossys /f d:\tbos.bin bootfile.exe tbos.str
+
+This command will install TBOS to the file d:\tbos.bin, and then copy the
+files tbos.str and bootfile.exe to the root directory of the FAT file system.
+Note that for this specific example, the file bootfile.exe must be the 
+DOS/TBOS version of that file, since it will executed from TBOS.
+
+4. Run the *Windows* version of BOOTFILE to boot the system from the file:
+
+bootfile d:\tbos.bin	(full path to tbos.bin must be given)
+
+The command line above updates the MBR to boot from d:\tbos.bin, and then
+initiates a system reboot into TBOS. When all commands listed in tbos.str
+have been executed, TBOS will prompt you to reboot the system, which should
+then boot normally, the same as before.
+
+-----------------------------------------------------------------------------
+End of document
+----------------------------------------------------------------------------
