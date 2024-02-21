@@ -1,2 +1,3 @@
-# tbosdt old docs <br>
+# TBOSDT Command Reference <br>
+# ! out of date <br>
 https://dialmak.github.io/tbosdt/
